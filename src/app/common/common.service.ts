@@ -5,7 +5,7 @@ import * as AWS from 'aws-sdk';
 
 AWS.config.update({
   region: 'us-east-2',
-  credentials: new AWS.Credentials('AKIA6PWSA6Q4V663PL35', 'UU6TnZzKgBpRv1g5Eo0NlX1GR/bgOfV29YBgEyUv')
+  credentials: new AWS.Credentials('', '')
 });
 
 @Injectable()
