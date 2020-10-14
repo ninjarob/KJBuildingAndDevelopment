@@ -33,8 +33,8 @@ export class NavComponent implements OnInit {
     this.router.navigate(['/jobs']);
   }
 
-  goToUserLogin() {
-    this.router.navigate(['/user-login']);
+  goToLogin() {
+    this.router.navigate(['/login']);
   }
 
   getActive(link) {

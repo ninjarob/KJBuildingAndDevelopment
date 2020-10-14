@@ -1,18 +1,19 @@
 <nav-selector activeLink="contact"></nav-selector>
-<div class="what-we-do">
-    <p>Contact us using the stuff below:</p>
-</div>
-<div class="contact">
-    <p>Contact Us</p>
-    <form action="/new_movie" method="POST">
-        <p>Name:</p>
-        <input type="text" name="name" placeholder="">
-        <p>Phone:</p>
-        <input type="text" name="phone" placeholder="">
-        <p>Email:</p>
-        <input type="text" name="email" placeholder="">
-        <p>Job Description:</p>
-        <textarea name="description"></textarea>
-        <input type="submit">
+<div class="center-container">
+    <h3>
+        CONTACT
+    </h3>
+    <form action="#">
+        <label for="customerName">NAME <em>&#x2a;</em></label>
+        <input id="customerName" name="customerName" required="" type="text"/>
+        <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+        <input id="customerEmail" name="customerEmail" required="" type="email"/>
+        <label for="customerPhone">PHONE</label>
+        <input id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel"/>
+        <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label>
+        <textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
+        <label for="spamProtection">SPAM PROTECTION <em>&#x2a; </em><span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span></label><input
+            id="spamProtection" name="spamProtection" type="text"/>
+        <button id="customerOrder">SUBMIT</button>
     </form>
 </div>

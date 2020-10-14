@@ -1,24 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 0 0 50px 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color:#9BC86A;
+  //background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat;
+  background: url("../assets/img/hardhat.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  font-size: 12pt;
+  font-family: "Spartan";
+  color: #2A293E;
 }
 
-a {
-  color: #00B7FF;
-}
+#container {
+  width: 70%;
+  .header-text {
+    font-size: 50px;
+    width: 90%;
+    padding-top: 30px;
+  }
 
-.header-text {
-  font-size: 70px;
-  width: 90%;
-  padding-top: 30px;
-}
+  .header {
+    background: url("../assets/img/WoodenHeader.jpg");
+    background-size: cover;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+  }
 
-.header {
-  background: url("../assets/img/WoodenHeader.jpg") repeat-x;
-  height: 150px;
-  text-align: center;
-  vertical-align: middle;
+  .header-phone {
+    font-size: 20px;
+    font-weight: bold;
+    color: mintcream;
+    margin-left: 50%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .alpha-50 {
+    opacity: 0.5;
+  }
+
+  a[href^="tel:"] {
+    color: #444444;
+  }
+
+  label, input, textarea {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 24pt;
+    font-family: "Spartan";
+  }
+
+  input {
+    margin-bottom: 24pt;
+  }
+
+  input[type=button] {
+    background-color: #f45702; /* Green */
+    border: none;
+    color: white;
+    width: auto;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
 }
 
 #nav {
@@ -65,36 +126,157 @@ a {
   height:100px;
 }
 
-.what-we-do {
-  font-size: 20px;
-  text-align: center;
-  height: 2000px;
-  background: url("../assets/img/heavy_equipment.jpg") no-repeat center top;
-}
-
 .contact {
   font-size: 14px;
   text-align: center;
 }
 
-/*.main-background-image {*/
-  /*background: url("/images/Engineer.png");*/
-  /*opacity: 0.5;*/
-  /*width: 967px;*/
-  /*height: 1280px;*/
-/*}*/
+.center-container {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border-top: 10px solid #f45702;
+}
 
-@media only screen and (max-width: 1264px) {
-  .header-text {
-    font-size: 50px;
-    padding-top: 30px;
+h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 24pt;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+}
+
+span {
+  font-size: 8pt;
+}
+
+em {
+  color: #f45702;
+  font-weight: bold;
+}
+
+input, textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #6bd4b1;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  display: block;
+  float: right;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: #f45702;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+button:hover {
+  background: inherit;
+  color: #f45702;
+  border-bottom: 2px solid #f45702;
+}
+
+::selection {
+  background: #ffc7b8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 1px solid #6bd4b1;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+@media only screen and (max-width: 1292px) {
+  #container {
+    .header-text {
+      font-size: 40px;
+      padding-top: 30px;
+    }
+
+    .header {
+      height: 120px;
+    }
+
+    .header-img {
+      height: 70px;
+    }
   }
+}
 
-  .header {
-    height: 120px;
+
+@media only screen and (max-width: 1036px) {
+  #container {
+    .header-text {
+      font-size: 30px;
+      padding-top: 30px;
+    }
+
+    .header {
+      height: 120px;
+    }
+
+    .header-img {
+      height: 70px;
+    }
   }
+}
 
-  .header-img {
-    height:70px;
+@media only screen and (max-width: 822px) {
+  #container {
+    .header-text {
+      font-size: 25px;
+      padding-top: 30px;
+    }
+
+    .header {
+      height: 120px;
+    }
+
+    .header-img {
+      height: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 714px) {
+  #container {
+    .header-text {
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 30px;
+    }
+
+    .header {
+      height: 120px;
+    }
+
+    .header-img {
+      height: 70px;
+    }
+
+    .header-phone {
+      font-size: 16px;
+    }
   }
 }

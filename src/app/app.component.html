@@ -6,26 +6,18 @@
   <link rel="stylesheet" href="../../styles/styles.scss">
 </head>
 <body>
+<div id="container">
   <div class="header">
     <img class="header-img right" src="../../assets/img/Engineer.png">
     <img class="header-img left" src="../../assets/img/Engineer.png">
     <div class="header-text">
       K & J Building and Development
     </div>
-  </div>
-
-  <div *ngIf='!blankPage'>
-    <div id="fullPage">
-      <div class="content">
-        <div class="content-container" [ngClass]="{ 'align-center': pageData.alignCenter }" mcAutoHeightAdjust="145">
-          <router-outlet></router-outlet>
-
-        </div>
-      </div>
+    <div class="header-phone">
+      <a href="tel:+(801) 555-5555">(801) 555-5555</a>
     </div>
   </div>
-  <div *ngIf='blankPage'>
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
+</div>
 </body>
 </html>
