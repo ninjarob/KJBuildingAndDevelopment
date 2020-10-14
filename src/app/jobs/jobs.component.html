@@ -1,0 +1,23 @@
+<nav-selector activeLink="jobs"></nav-selector>
+<br><br>
+<table>
+    <thead>
+        <tr>
+            <th>JOB NAME</th>
+            <th>LOCATION</th>
+            <th>STATUS</th>
+            <th>DATE ENTERED</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let job of jobs">
+            <td><a class="btn btn-info btn-sm" (click)="childModal.show(job)">{{job.name.S}}</a></td>
+            <td>{{job.location.S}}</td>
+            <td>{{job.status.S}}</td>
+            <td>{{job.create_date.S}}</td>
+        </tr>
+    </tbody>
+</table>
+<common-modal  #childModal [title]="'Blueprints'">
+    <div class="modal-body"></div>
+</common-modal>

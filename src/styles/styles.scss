@@ -1,0 +1,100 @@
+body {
+  padding: 0 0 50px 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#9BC86A;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header-text {
+  font-size: 70px;
+  width: 90%;
+  padding-top: 30px;
+}
+
+.header {
+  background: url("../assets/img/WoodenHeader.jpg") repeat-x;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 4% 0 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+}
+
+.left {
+  float:left;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.right {
+  float:right;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
+.header-img {
+  height:100px;
+}
+
+.what-we-do {
+  font-size: 20px;
+  text-align: center;
+  height: 2000px;
+  background: url("../assets/img/heavy_equipment.jpg") no-repeat center top;
+}
+
+.contact {
+  font-size: 14px;
+  text-align: center;
+}
+
+/*.main-background-image {*/
+  /*background: url("/images/Engineer.png");*/
+  /*opacity: 0.5;*/
+  /*width: 967px;*/
+  /*height: 1280px;*/
+/*}*/
+
+@media only screen and (max-width: 1264px) {
+  .header-text {
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  .header {
+    height: 120px;
+  }
+
+  .header-img {
+    height:70px;
+  }
+}
