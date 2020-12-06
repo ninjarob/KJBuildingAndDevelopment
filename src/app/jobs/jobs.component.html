@@ -7,6 +7,7 @@
             <th>LOCATION</th>
             <th>STATUS</th>
             <th>DATE ENTERED</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -15,9 +16,21 @@
             <td>{{job.location.S}}</td>
             <td>{{job.status.S}}</td>
             <td>{{job.create_date.S}}</td>
+            <td>
+                <img align="right" src="../../assets/img/trash.png" (click)="deleteJob(job)">
+                <img align="right" src="../../assets/img/edit.png" (click)="editJob(blueprint)">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <a class="btn btn-info btn-sm" (click)="addModal.show()">Add Job</a>
+            </td>
         </tr>
     </tbody>
 </table>
 <common-modal  #childModal [title]="'Blueprints'">
+    <div class="modal-body"></div>
+</common-modal>
+<common-modal #addModal [title]="'Add Job'">
     <div class="modal-body"></div>
 </common-modal>

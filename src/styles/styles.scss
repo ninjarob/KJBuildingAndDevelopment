@@ -23,6 +23,8 @@ body {
     font-size: 50px;
     width: 90%;
     padding-top: 30px;
+    color: #EFA84C;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 
   .header {
@@ -36,8 +38,9 @@ body {
   .header-phone {
     font-size: 20px;
     font-weight: bold;
-    color: mintcream;
     margin-left: 50%;
+    color: #EFA84C;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 
   .center {
@@ -51,7 +54,9 @@ body {
   }
 
   a[href^="tel:"] {
-    color: #444444;
+    //color: #444444;
+    color: #EFA84C;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 
   label, input, textarea {
@@ -112,8 +117,6 @@ body {
 
 .left {
   float:left;
-  padding-top: 30px;
-  padding-left: 40px;
 }
 
 .right {
@@ -122,8 +125,12 @@ body {
   padding-right: 40px;
 }
 
-.header-img {
-  height:100px;
+.header-img-left {
+  height: 100%;
+}
+
+.header-img-right {
+  height: 120px;
 }
 
 .contact {
@@ -218,7 +225,11 @@ textarea:-webkit-autofill:focus {
       height: 120px;
     }
 
-    .header-img {
+    .header-img-left {
+      height: 100%;
+    }
+
+    .header-img-right {
       height: 70px;
     }
   }
@@ -236,7 +247,11 @@ textarea:-webkit-autofill:focus {
       height: 120px;
     }
 
-    .header-img {
+    .header-img-left {
+      height: 100%;
+    }
+
+    .header-img-right {
       height: 70px;
     }
   }
@@ -253,7 +268,11 @@ textarea:-webkit-autofill:focus {
       height: 120px;
     }
 
-    .header-img {
+    .header-img-left {
+      height: 100%;
+    }
+
+    .header-img-right {
       height: 70px;
     }
   }
@@ -271,7 +290,11 @@ textarea:-webkit-autofill:focus {
       height: 120px;
     }
 
-    .header-img {
+    .header-img-left {
+      height: 100%;
+    }
+
+    .header-img-right {
       height: 70px;
     }
 

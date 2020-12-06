@@ -31,4 +31,18 @@ export class CommonModalComponent implements OnInit {
   getBluePrint(blueprintFile) {
     this.commonService.getBluePrint(blueprintFile);
   }
+
+  addBlueprint() {
+
+  }
+
+  deleteBlueprint(blueprint) {
+    if (confirm("Are you sure you wan to remove this blueprint ("+blueprint.key+")?")) {
+      console.log("Implement delete functionality here");
+    }
+  }
+
+  editBlueprint(blueprint) {
+
+  }
 }

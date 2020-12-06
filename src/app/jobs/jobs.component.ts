@@ -12,6 +12,7 @@ export class JobsComponent implements OnInit {
 
   jobs: any;
   @ViewChild('childModal') childModal :CommonModalComponent;
+  @ViewChild('addModal') addModal: CommonModalComponent;
 
   constructor(private appParameterService: AppParameterService,
               private commonService: CommonService) {}
@@ -33,5 +34,11 @@ export class JobsComponent implements OnInit {
       let lambdaResponseBody = JSON.parse(lambdaResponse.body);
       this.jobs = lambdaResponseBody.Items;
     });
+  }
+
+  deleteJob(job) {
+    if (confirm("Are you sure you wan to remove this job ("+job.name.S+") and all of its associated blueprints?")) {
+      console.log("Implement delete functionality here");
+    }
   }
 }
